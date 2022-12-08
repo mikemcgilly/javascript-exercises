@@ -19,7 +19,12 @@ const subtract = function() {
   return runningDifference;
 	
 };
-
+//pick up here, for some reason the array [7, 11] is not behaving
+//like it was in earlier examples. instead of the usual [0] indexing
+//returning individual arguments as though they're part of an array - 
+//instead its returning 7,11 as the first element. either i dont understand
+//the arguments object or theres some fuckery going on with the types
+//and i need to somehow cast them or something
 const sum = function() {
   let runningTotal = 0;
   console.log("first element type: " + typeof arguments[0]);
